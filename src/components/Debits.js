@@ -61,8 +61,8 @@ const Debits = (props) => {
 
       <form onSubmit={handleNewDebit}>
 
-        <input type="text" name="description" />
-        <input type="number" name="amount" />
+        <input type="text" name="description" placeholder="Enter debit description" />
+        <input type="number" name="amount" placeholder="Enter debit amount" />
         <button type="submit">Add Debit</button>
         
       </form>

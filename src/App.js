@@ -15,6 +15,7 @@ import Credits from './components/Credits';
 import Debits from './components/Debits';
 
 import axios from "axios";
+import './App.css'
 
 class App extends Component {
   constructor() {  // Create and initialize state
