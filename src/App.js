@@ -86,7 +86,10 @@ class App extends Component {
   };
   
   addCredit = (newCredit) => {
-    
+    const { creditList, accountBalance } = this.state;
+    const newCreditList = [...creditList, newCredit];
+    const newBalance = accountBalance + newCredit.amount;
+    this.setState({creditList: newCreditList, accountBalance: newBalance});
   };
 
   // Update state's currentUser (userName) after "Log In" button is clicked
