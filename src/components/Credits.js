@@ -54,15 +54,13 @@ const Credits = (props) => {
       <h1>Credits</h1>
 
       <AccountBalance accountBalance={accountBalance}/>
-
+    
       {creditsView()}
-
-      <br/>
 
       <form onSubmit={handleNewCredit}>
 
-        <input type="text" name="description" />
-        <input type="number" name="amount" />
+        <input type="text" name="description" placeholder="Enter credit description" />
+        <input type="number" name="amount" placeholder="Enter credit amount" />
         <button type="submit">Add Credit</button>
         
       </form>
